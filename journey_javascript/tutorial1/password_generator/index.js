@@ -46,24 +46,10 @@ function slider(value) {
 
 function popUp(value) {
   if (value !== "") {
-    console.log(value);
+    clipCopy.style.transition = "opacity .15s linear";
     clipCopy.style.opacity = 1;
-    clipCopy.style.transition = "opacity 2s linear 1s";
-    clipCopy.style.display = "block";
     setTimeout(() => {
-      clipCopy.style.display = "none";
+      clipCopy.style.opacity = 0;
     }, 2000);
   }
 }
-
-/*
-#fadeout{
-  opacity: 0;
-  transition: opacity 2s linear 1s;
-}
-
-#fadein{
-  opacity: 1;
-  transition: opacity 2s linear 1;
-}
-*/
