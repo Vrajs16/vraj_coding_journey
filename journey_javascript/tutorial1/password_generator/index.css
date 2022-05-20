@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  background-color: #1c1c1c;
+  color: white;
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: absolute;
+  background-color: #1f2937;
+  width: 550px;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-info {
+  padding-top: 118px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-bottom: 46px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  padding-bottom: 10px;
+}
+
+span {
+  display: inline-block;
+  color: rgb(65, 220, 115);
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 51px;
+}
+
+.generatebtn {
+  background-color: #10b981;
+  width: 223px;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.generatebtn:active {
+  transform: scale(0.9);
+}
+
+.config-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+#slider {
+  appearance: none;
+  outline: none;
+  border-radius: 4px;
+  background: #10b981;
+  transition: opacity 0.2s;
+}
+#slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 10%;
+  background: white;
+  cursor: pointer;
+}
+
+#sliderValue {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+hr {
+  border: 1px solid #2f3e53;
+}
+
+.password-container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 27px;
+}
+
+.password {
+  border: none;
+  border-radius: 6px;
+  background-color: #273549;
+  width: 211px;
+  height: 39px;
+  color: #55f991;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password:active {
+  transform: scale(0.9);
+}
+
+#clipcopy {
+  position: absolute;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  top: 10%;
+  left: 0%;
+  right: 0%;
+  display: none;
+}
