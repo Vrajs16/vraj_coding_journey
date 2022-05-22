@@ -21,10 +21,16 @@ button {
   font-weight: bold;
   margin-top: 4px;
   padding: 10px 20px;
+  border: 1px solid #5f9341;
 }
 
 button:active {
   transform: scale(0.95);
+}
+
+#delete-btn {
+  background-color: white;
+  color: #5f9341;
 }
 
 ul {
